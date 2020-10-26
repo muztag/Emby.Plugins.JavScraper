@@ -33,7 +33,7 @@ namespace Emby.Plugins.JavScraper.Scrapers
         /// </summary>
         /// <param name="handler"></param>
         public FC2(ILogger log = null)
-            : base("https://fc2club.com/", log)
+            : base("https://adult.contents.fc2.com/", log)
         {
         }
 
@@ -110,7 +110,7 @@ namespace Emby.Plugins.JavScraper.Scrapers
         {
             //https://adult.contents.fc2.com/article/1252526/
             //https://fc2club.com/html/FC2-1252526.html
-            var url = $"https://fc2club.com/html/FC2-{id}.html";
+            var url = $"https://adult.contents.fc2.com/article/1407916/";
             var doc = await GetHtmlDocumentAsync(url);
             if (doc == null)
                 return null;
